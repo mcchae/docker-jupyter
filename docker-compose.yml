@@ -1,0 +1,9 @@
+version: '2'
+services:
+  mydt:
+    image: "mcchae/jupyter"
+    hostname: "myjupyter"
+    ports:
+      - "8888:8888"
+    volumes:
+      - ${PWD}:/notebook
